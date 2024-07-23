@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Character
+    uniqueID: 4094933045
+    locked: 0
+  - name: CenterLine
+    uniqueID: 2230289091
+    locked: 0
+  - name: Notes
+    uniqueID: 4121076043
+    locked: 0
+  - name: GameUI
+    uniqueID: 2269365339
+    locked: 0
+  - name: SystemUI
+    uniqueID: 3951592295
+    locked: 0
