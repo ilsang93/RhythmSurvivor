@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
@@ -14,21 +15,25 @@ public class CharacterManager : MonoBehaviour
 
     private void MoveLeft()
     {
-        transform.position += Vector3.left;
+        transform.DOJump(transform.position + Vector3.left, 1, 1, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.left, 1);
     }
 
     private void MoveRight()
     {
-        transform.position += Vector3.right;
+        transform.DOJump(transform.position + Vector3.right, 1, 1, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.right, 1);
     }
 
     private void MoveUp()
     {
-        transform.position += Vector3.up;
+        transform.DOJump(transform.position + Vector3.up, 1, 1, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.up, 1);
     }
 
     private void MoveDown()
     {
-        transform.position += Vector3.down;
+        transform.DOJump(transform.position + Vector3.down, 1, 1, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.down, 1);
     }
 }

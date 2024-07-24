@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Field_Floor
+    uniqueID: 2085372545
+    locked: 0
+  - name: Field_Wall
+    uniqueID: 836964709
+    locked: 0
   - name: Character
     uniqueID: 4094933045
     locked: 0
