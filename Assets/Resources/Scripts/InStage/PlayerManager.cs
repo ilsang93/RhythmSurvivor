@@ -15,7 +15,7 @@ public class PlayerManager : MonoBehaviour
             characterManager.transform.position = value;
         }
     }
-
+    [HideInInspector]
     public ChracterStatus chracterStatus = ChracterStatus.Idle;
     // Start is called before the first frame update
     void Start()

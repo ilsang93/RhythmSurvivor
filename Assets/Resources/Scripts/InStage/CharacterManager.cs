@@ -15,25 +15,61 @@ public class CharacterManager : MonoBehaviour
 
     private void MoveLeft()
     {
+        if (PlayerManager.instance.chracterStatus == PlayerManager.ChracterStatus.Idle)
+        {
+            PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Move;
+        }
+        else
+        {
+            return;
+        }
         transform.DOJump(transform.position + Vector3.left, 1, 1, 1);
-        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.left, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.left, 1).OnComplete(() => PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Idle);
+        NotesManager.instance.DoJudgement();
     }
 
     private void MoveRight()
     {
+        if (PlayerManager.instance.chracterStatus == PlayerManager.ChracterStatus.Idle)
+        {
+            PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Move;
+        }
+        else
+        {
+            return;
+        }
         transform.DOJump(transform.position + Vector3.right, 1, 1, 1);
-        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.right, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.right, 1).OnComplete(() => PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Idle);
+        NotesManager.instance.DoJudgement();
     }
 
     private void MoveUp()
     {
+        if (PlayerManager.instance.chracterStatus == PlayerManager.ChracterStatus.Idle)
+        {
+            PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Move;
+        }
+        else
+        {
+            return;
+        }
         transform.DOJump(transform.position + Vector3.up, 1, 1, 1);
-        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.up, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.up, 1).OnComplete(() => PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Idle);
+        NotesManager.instance.DoJudgement();
     }
 
     private void MoveDown()
     {
+        if (PlayerManager.instance.chracterStatus == PlayerManager.ChracterStatus.Idle)
+        {
+            PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Move;
+        }
+        else
+        {
+            return;
+        }
         transform.DOJump(transform.position + Vector3.down, 1, 1, 1);
-        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.down, 1);
+        PlayerManager.instance.transform.DOLocalMove(PlayerManager.instance.transform.localPosition + Vector3.down, 1).OnComplete(() => PlayerManager.instance.chracterStatus = PlayerManager.ChracterStatus.Idle);
+        NotesManager.instance.DoJudgement();
     }
 }
