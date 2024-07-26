@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+    public GameState gameState = GameState.Ready;
+    public ReadyController readyController;
+
+    void Awake() {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        readyController.DoReady();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+}
+
+public enum GameState
+{
+    Ready,
+    Play,
+    Pause,
+    GameOver
 }

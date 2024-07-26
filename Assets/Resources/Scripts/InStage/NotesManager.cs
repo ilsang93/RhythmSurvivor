@@ -38,6 +38,14 @@ public class NotesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.gameState == GameState.Ready)
+        {
+            return;
+        } else if (GameManager.instance.gameState != GameState.Play)
+        {
+            return;
+        }
+        
         noteTime += Time.deltaTime;
         if (noteTime > noteDuration)
         {
