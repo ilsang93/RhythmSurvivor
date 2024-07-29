@@ -68,17 +68,17 @@ crashlytics-build.properties
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+# /[Aa]ssets/[Ss]treamingAssets/aa.meta
+# /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Nature_pixel_art_assets
-Assets/Plugins/Demigiant
-Assets/Plugins/Demigiant.meta
-Assets/Resources/DOTweenSettings.asset
-Assets/Resources/DOTweenSettings.asset.meta
+# Assets/Plugins/Demigiant
+# Assets/Plugins/Demigiant.meta
+# Assets/Resources/DOTweenSettings.asset
+# Assets/Resources/DOTweenSettings.asset.meta
 Assets/Nature_pixel_art_assets.meta
-Assets/Feel
-Assets/Feel.meta
+# Assets/Feel
+# Assets/Feel.meta
 Assets/ElvGames
 Assets/ElvGames.meta
-Assets/Resources/Fonts/DNFBitBitV2
-Assets/Resources/Fonts/DNFBitBitV2.meta
+# Assets/Resources/Fonts/DNFBitBitV2
+# Assets/Resources/Fonts/DNFBitBitV2.meta
