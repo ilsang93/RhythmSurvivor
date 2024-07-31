@@ -8,7 +8,15 @@ public class GameManager : MonoBehaviour
     public GameState gameState = GameState.Ready;
     public ReadyController readyController;
 
-    void Awake() {
+    [SerializeField]
+    private AudioSource bgmSource;
+    public AudioSource BGMSource { get; }
+    [SerializeField]
+    private AudioSource sfxSource;
+    public AudioSource SFXSource { get; }
+
+    void Awake()
+    {
         if (instance == null)
         {
             instance = this;
