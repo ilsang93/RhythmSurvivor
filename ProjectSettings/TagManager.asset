@@ -65,3 +65,6 @@ TagManager:
   - name: SystemUI
     uniqueID: 3951592295
     locked: 0
+  - name: MenuUI
+    uniqueID: 3394109009
+    locked: 0
