@@ -14,7 +14,7 @@ public class StageSelectManager : MonoBehaviour
         }
         else
         {
-            destroy(this);
+            Destroy(this);
         }
     }
 }
